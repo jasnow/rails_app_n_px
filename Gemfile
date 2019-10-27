@@ -47,5 +47,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'sorbet', :group => :development
 gem 'sorbet-runtime'
-gem 'dalli'
 gem 'sorbet-rails'
+gem 'dalli'
+gem 'redis'

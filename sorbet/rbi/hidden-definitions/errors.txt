@@ -8975,13 +8975,17 @@
 # wrong constant name <static-init>
 # wrong constant name to_s
 # wrong constant name <static-init>
+# wrong constant name <Class:ConnectionPoolLike>
 # wrong constant name <Class:Entry>
 # wrong constant name <Class:FileStore>
 # wrong constant name <Class:MemCacheStore>
 # wrong constant name <Class:MemoryStore>
 # wrong constant name <Class:NullStore>
+# wrong constant name <Class:RedisCacheStore>
 # wrong constant name <Class:Store>
 # wrong constant name <Class:Strategy>
+# wrong constant name with
+# wrong constant name <static-init>
 # wrong constant name dup_value!
 # wrong constant name expired?
 # wrong constant name expires_at
@@ -9009,6 +9013,17 @@
 # wrong constant name <static-init>
 # wrong constant name supports_cache_versioning?
 # wrong constant name <static-init>
+# wrong constant name supports_cache_versioning?
+# wrong constant name <Class:LocalCacheWithRaw>
+# wrong constant name initialize
+# wrong constant name max_key_bytesize
+# wrong constant name mget_capable?
+# wrong constant name mset_capable?
+# wrong constant name redis
+# wrong constant name redis_options
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name build_redis
 # wrong constant name supports_cache_versioning?
 # wrong constant name cleanup
 # wrong constant name clear
@@ -20613,6 +20628,9 @@
 # wrong constant name to_octet_string
 # wrong constant name sign_pss
 # wrong constant name verify_pss
+# uninitialized constant OpenSSL::SSL::SSLSocket::BLOCK_SIZE
+# wrong constant name alpn_protocol
+# wrong constant name tmp_key
 # wrong constant name ==
 # wrong constant name ==
 # wrong constant name ==
@@ -26604,6 +26622,1270 @@
 # wrong constant name special_prefixes=
 # wrong constant name vi_editing_mode
 # wrong constant name vi_editing_mode?
+# wrong constant name <Class:BaseConnectionError>
+# wrong constant name <Class:BaseError>
+# wrong constant name <Class:CannotConnectError>
+# wrong constant name <Class:Client>
+# wrong constant name <Class:Cluster>
+# wrong constant name <Class:CommandError>
+# wrong constant name <Class:Connection>
+# wrong constant name <Class:ConnectionError>
+# wrong constant name <Class:Distributed>
+# wrong constant name <Class:Future>
+# wrong constant name <Class:FutureNotReady>
+# wrong constant name <Class:HashRing>
+# wrong constant name <Class:InheritedError>
+# wrong constant name <Class:InvalidClientOptionError>
+# wrong constant name <Class:Pipeline>
+# wrong constant name <Class:ProtocolError>
+# wrong constant name <Class:SubscribedClient>
+# wrong constant name <Class:Subscription>
+# wrong constant name <Class:TimeoutError>
+# wrong constant name _bpop
+# wrong constant name _client
+# wrong constant name _eval
+# wrong constant name _scan
+# wrong constant name append
+# wrong constant name asking
+# wrong constant name auth
+# wrong constant name bgrewriteaof
+# wrong constant name bgsave
+# wrong constant name bitcount
+# wrong constant name bitop
+# wrong constant name bitpos
+# wrong constant name blpop
+# wrong constant name brpop
+# wrong constant name brpoplpush
+# wrong constant name bzpopmax
+# wrong constant name bzpopmin
+# wrong constant name call
+# wrong constant name client
+# wrong constant name close
+# wrong constant name cluster
+# wrong constant name commit
+# wrong constant name config
+# wrong constant name connected?
+# wrong constant name connection
+# wrong constant name dbsize
+# wrong constant name debug
+# wrong constant name decr
+# wrong constant name decrby
+# wrong constant name del
+# wrong constant name discard
+# wrong constant name disconnect!
+# wrong constant name dump
+# wrong constant name echo
+# wrong constant name eval
+# wrong constant name evalsha
+# wrong constant name exec
+# wrong constant name exists
+# wrong constant name expire
+# wrong constant name expireat
+# wrong constant name flushall
+# wrong constant name flushdb
+# wrong constant name geoadd
+# wrong constant name geodist
+# wrong constant name geohash
+# wrong constant name geopos
+# wrong constant name georadius
+# wrong constant name georadiusbymember
+# wrong constant name get
+# wrong constant name getbit
+# wrong constant name getrange
+# wrong constant name getset
+# wrong constant name hdel
+# wrong constant name hexists
+# wrong constant name hget
+# wrong constant name hgetall
+# wrong constant name hincrby
+# wrong constant name hincrbyfloat
+# wrong constant name hkeys
+# wrong constant name hlen
+# wrong constant name hmget
+# wrong constant name hmset
+# wrong constant name hscan
+# wrong constant name hscan_each
+# wrong constant name hset
+# wrong constant name hsetnx
+# wrong constant name hvals
+# wrong constant name id
+# wrong constant name incr
+# wrong constant name incrby
+# wrong constant name incrbyfloat
+# wrong constant name info
+# wrong constant name initialize
+# wrong constant name keys
+# wrong constant name lastsave
+# wrong constant name lindex
+# wrong constant name linsert
+# wrong constant name llen
+# wrong constant name lpop
+# wrong constant name lpush
+# wrong constant name lpushx
+# wrong constant name lrange
+# wrong constant name lrem
+# wrong constant name lset
+# wrong constant name ltrim
+# wrong constant name mapped_hmget
+# wrong constant name mapped_hmset
+# wrong constant name mapped_mget
+# wrong constant name mapped_mset
+# wrong constant name mapped_msetnx
+# wrong constant name method_missing
+# wrong constant name mget
+# wrong constant name migrate
+# wrong constant name monitor
+# wrong constant name move
+# wrong constant name mset
+# wrong constant name msetnx
+# wrong constant name multi
+# wrong constant name object
+# wrong constant name persist
+# wrong constant name pexpire
+# wrong constant name pexpireat
+# wrong constant name pfadd
+# wrong constant name pfcount
+# wrong constant name pfmerge
+# wrong constant name ping
+# wrong constant name pipelined
+# wrong constant name psetex
+# wrong constant name psubscribe
+# wrong constant name psubscribe_with_timeout
+# wrong constant name pttl
+# wrong constant name publish
+# wrong constant name pubsub
+# wrong constant name punsubscribe
+# wrong constant name queue
+# wrong constant name quit
+# wrong constant name randomkey
+# wrong constant name rename
+# wrong constant name renamenx
+# wrong constant name restore
+# wrong constant name rpop
+# wrong constant name rpoplpush
+# wrong constant name rpush
+# wrong constant name rpushx
+# wrong constant name sadd
+# wrong constant name save
+# wrong constant name scan
+# wrong constant name scan_each
+# wrong constant name scard
+# wrong constant name script
+# wrong constant name sdiff
+# wrong constant name sdiffstore
+# wrong constant name select
+# wrong constant name sentinel
+# wrong constant name set
+# wrong constant name setbit
+# wrong constant name setex
+# wrong constant name setnx
+# wrong constant name setrange
+# wrong constant name shutdown
+# wrong constant name sinter
+# wrong constant name sinterstore
+# wrong constant name sismember
+# wrong constant name slaveof
+# wrong constant name slowlog
+# wrong constant name smembers
+# wrong constant name smove
+# wrong constant name sort
+# wrong constant name spop
+# wrong constant name srandmember
+# wrong constant name srem
+# wrong constant name sscan
+# wrong constant name sscan_each
+# wrong constant name strlen
+# wrong constant name subscribe
+# wrong constant name subscribe_with_timeout
+# wrong constant name subscribed?
+# wrong constant name sunion
+# wrong constant name sunionstore
+# wrong constant name sync
+# wrong constant name time
+# wrong constant name ttl
+# wrong constant name type
+# wrong constant name unlink
+# wrong constant name unsubscribe
+# wrong constant name unwatch
+# wrong constant name watch
+# wrong constant name with_reconnect
+# wrong constant name without_reconnect
+# wrong constant name xack
+# wrong constant name xadd
+# wrong constant name xclaim
+# wrong constant name xdel
+# wrong constant name xgroup
+# wrong constant name xinfo
+# wrong constant name xlen
+# wrong constant name xpending
+# wrong constant name xrange
+# wrong constant name xread
+# wrong constant name xreadgroup
+# wrong constant name xrevrange
+# wrong constant name xtrim
+# wrong constant name zadd
+# wrong constant name zcard
+# wrong constant name zcount
+# wrong constant name zincrby
+# wrong constant name zinterstore
+# wrong constant name zlexcount
+# wrong constant name zpopmax
+# wrong constant name zpopmin
+# wrong constant name zrange
+# wrong constant name zrangebylex
+# wrong constant name zrangebyscore
+# wrong constant name zrank
+# wrong constant name zrem
+# wrong constant name zremrangebyrank
+# wrong constant name zremrangebyscore
+# wrong constant name zrevrange
+# wrong constant name zrevrangebylex
+# wrong constant name zrevrangebyscore
+# wrong constant name zrevrank
+# wrong constant name zscan
+# wrong constant name zscan_each
+# wrong constant name zscore
+# wrong constant name zunionstore
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Connector>
+# wrong constant name _parse_driver
+# wrong constant name _parse_options
+# wrong constant name call
+# wrong constant name call_loop
+# wrong constant name call_pipeline
+# wrong constant name call_pipelined
+# wrong constant name call_with_timeout
+# wrong constant name call_without_timeout
+# wrong constant name command_map
+# wrong constant name connect
+# wrong constant name connect_timeout
+# wrong constant name connected?
+# wrong constant name connection
+# wrong constant name db
+# wrong constant name db=
+# wrong constant name disconnect
+# wrong constant name driver
+# wrong constant name ensure_connected
+# wrong constant name establish_connection
+# wrong constant name host
+# wrong constant name id
+# wrong constant name inherit_socket?
+# wrong constant name initialize
+# wrong constant name io
+# wrong constant name location
+# wrong constant name logger
+# wrong constant name logger=
+# wrong constant name logging
+# wrong constant name options
+# wrong constant name password
+# wrong constant name path
+# wrong constant name port
+# wrong constant name process
+# wrong constant name read
+# wrong constant name read_timeout
+# wrong constant name reconnect
+# wrong constant name scheme
+# wrong constant name timeout
+# wrong constant name with_reconnect
+# wrong constant name with_socket_timeout
+# wrong constant name without_reconnect
+# wrong constant name without_socket_timeout
+# wrong constant name write
+# wrong constant name <Class:Sentinel>
+# wrong constant name check
+# wrong constant name initialize
+# wrong constant name resolve
+# wrong constant name resolve_master
+# wrong constant name resolve_slave
+# wrong constant name sentinel_detect
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:AmbiguousNodeError>
+# wrong constant name <Class:Command>
+# wrong constant name <Class:CommandErrorCollection>
+# wrong constant name <Class:CommandLoader>
+# wrong constant name <Class:CrossSlotPipeliningError>
+# wrong constant name <Class:KeySlotConverter>
+# wrong constant name <Class:Node>
+# wrong constant name <Class:NodeKey>
+# wrong constant name <Class:NodeLoader>
+# wrong constant name <Class:Option>
+# wrong constant name <Class:OrchestrationCommandNotSupported>
+# wrong constant name <Class:Slot>
+# wrong constant name <Class:SlotLoader>
+# wrong constant name call
+# wrong constant name call_loop
+# wrong constant name call_pipeline
+# wrong constant name call_with_timeout
+# wrong constant name call_without_timeout
+# wrong constant name connected?
+# wrong constant name connection_info
+# wrong constant name db
+# wrong constant name db=
+# wrong constant name disconnect
+# wrong constant name id
+# wrong constant name initialize
+# wrong constant name process
+# wrong constant name timeout
+# wrong constant name with_reconnect
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name extract_first_key
+# wrong constant name initialize
+# wrong constant name should_send_to_master?
+# wrong constant name should_send_to_slave?
+# wrong constant name <static-init>
+# wrong constant name errors
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name load
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name convert
+# uninitialized constant Redis::Cluster::Node::Elem
+# wrong constant name <Class:ReloadNeeded>
+# wrong constant name call_all
+# wrong constant name call_master
+# wrong constant name call_slave
+# wrong constant name each
+# wrong constant name find_by
+# wrong constant name initialize
+# wrong constant name process_all
+# wrong constant name sample
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name build_from_host_port
+# wrong constant name build_from_uri
+# wrong constant name split
+# wrong constant name to_node_urls
+# wrong constant name <static-init>
+# wrong constant name load_flags
+# wrong constant name add_node
+# wrong constant name initialize
+# wrong constant name per_node_key
+# wrong constant name secure?
+# wrong constant name update_node
+# wrong constant name use_replica?
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name exists?
+# wrong constant name find_node_key_of_master
+# wrong constant name find_node_key_of_slave
+# wrong constant name initialize
+# wrong constant name put
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name load
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:CommandHelper>
+# wrong constant name <Class:Ruby>
+# wrong constant name <Class:SSLSocket>
+# wrong constant name <Class:SocketMixin>
+# wrong constant name <Class:TCPSocket>
+# wrong constant name <Class:UNIXSocket>
+# wrong constant name build_command
+# wrong constant name encode
+# wrong constant name <static-init>
+# uninitialized constant Redis::Connection::Ruby::COMMAND_DELIMITER
+# wrong constant name connected?
+# wrong constant name disconnect
+# wrong constant name format_bulk_reply
+# wrong constant name format_error_reply
+# wrong constant name format_integer_reply
+# wrong constant name format_multi_bulk_reply
+# wrong constant name format_reply
+# wrong constant name format_status_reply
+# wrong constant name get_tcp_keepalive
+# wrong constant name initialize
+# wrong constant name read
+# wrong constant name set_tcp_keepalive
+# wrong constant name set_tcp_nodelay
+# wrong constant name timeout=
+# wrong constant name write
+# wrong constant name write_timeout=
+# wrong constant name <static-init>
+# wrong constant name connect
+# uninitialized constant Redis::Connection::SSLSocket::BLOCK_SIZE
+# uninitialized constant Redis::Connection::SSLSocket::CRLF
+# uninitialized constant Redis::Connection::SSLSocket::Elem
+# wrong constant name <static-init>
+# wrong constant name connect
+# wrong constant name _read_from_socket
+# wrong constant name _write_to_socket
+# wrong constant name gets
+# wrong constant name initialize
+# wrong constant name read
+# wrong constant name timeout=
+# wrong constant name write
+# wrong constant name write_timeout=
+# wrong constant name <static-init>
+# uninitialized constant Redis::Connection::TCPSocket::AF_APPLETALK
+# uninitialized constant Redis::Connection::TCPSocket::AF_CCITT
+# uninitialized constant Redis::Connection::TCPSocket::AF_CHAOS
+# uninitialized constant Redis::Connection::TCPSocket::AF_CNT
+# uninitialized constant Redis::Connection::TCPSocket::AF_COIP
+# uninitialized constant Redis::Connection::TCPSocket::AF_DATAKIT
+# uninitialized constant Redis::Connection::TCPSocket::AF_DLI
+# uninitialized constant Redis::Connection::TCPSocket::AF_E164
+# uninitialized constant Redis::Connection::TCPSocket::AF_ECMA
+# uninitialized constant Redis::Connection::TCPSocket::AF_HYLINK
+# uninitialized constant Redis::Connection::TCPSocket::AF_IMPLINK
+# uninitialized constant Redis::Connection::TCPSocket::AF_INET
+# uninitialized constant Redis::Connection::TCPSocket::AF_INET6
+# uninitialized constant Redis::Connection::TCPSocket::AF_IPX
+# uninitialized constant Redis::Connection::TCPSocket::AF_ISDN
+# uninitialized constant Redis::Connection::TCPSocket::AF_ISO
+# uninitialized constant Redis::Connection::TCPSocket::AF_LAT
+# uninitialized constant Redis::Connection::TCPSocket::AF_LINK
+# uninitialized constant Redis::Connection::TCPSocket::AF_LOCAL
+# uninitialized constant Redis::Connection::TCPSocket::AF_MAX
+# uninitialized constant Redis::Connection::TCPSocket::AF_NATM
+# uninitialized constant Redis::Connection::TCPSocket::AF_NDRV
+# uninitialized constant Redis::Connection::TCPSocket::AF_NETBIOS
+# uninitialized constant Redis::Connection::TCPSocket::AF_NS
+# uninitialized constant Redis::Connection::TCPSocket::AF_OSI
+# uninitialized constant Redis::Connection::TCPSocket::AF_PPP
+# uninitialized constant Redis::Connection::TCPSocket::AF_PUP
+# uninitialized constant Redis::Connection::TCPSocket::AF_ROUTE
+# uninitialized constant Redis::Connection::TCPSocket::AF_SIP
+# uninitialized constant Redis::Connection::TCPSocket::AF_SNA
+# uninitialized constant Redis::Connection::TCPSocket::AF_SYSTEM
+# uninitialized constant Redis::Connection::TCPSocket::AF_UNIX
+# uninitialized constant Redis::Connection::TCPSocket::AF_UNSPEC
+# uninitialized constant Redis::Connection::TCPSocket::AI_ADDRCONFIG
+# uninitialized constant Redis::Connection::TCPSocket::AI_ALL
+# uninitialized constant Redis::Connection::TCPSocket::AI_CANONNAME
+# uninitialized constant Redis::Connection::TCPSocket::AI_DEFAULT
+# uninitialized constant Redis::Connection::TCPSocket::AI_MASK
+# uninitialized constant Redis::Connection::TCPSocket::AI_NUMERICHOST
+# uninitialized constant Redis::Connection::TCPSocket::AI_NUMERICSERV
+# uninitialized constant Redis::Connection::TCPSocket::AI_PASSIVE
+# uninitialized constant Redis::Connection::TCPSocket::AI_V4MAPPED
+# uninitialized constant Redis::Connection::TCPSocket::AI_V4MAPPED_CFG
+# uninitialized constant Redis::Connection::TCPSocket::APPEND
+# uninitialized constant Redis::Connection::TCPSocket::BINARY
+# uninitialized constant Redis::Connection::TCPSocket::CREAT
+# uninitialized constant Redis::Connection::TCPSocket::CRLF
+# uninitialized constant Redis::Connection::TCPSocket::DSYNC
+# uninitialized constant Redis::Connection::TCPSocket::EAI_ADDRFAMILY
+# uninitialized constant Redis::Connection::TCPSocket::EAI_AGAIN
+# uninitialized constant Redis::Connection::TCPSocket::EAI_BADFLAGS
+# uninitialized constant Redis::Connection::TCPSocket::EAI_BADHINTS
+# uninitialized constant Redis::Connection::TCPSocket::EAI_FAIL
+# uninitialized constant Redis::Connection::TCPSocket::EAI_FAMILY
+# uninitialized constant Redis::Connection::TCPSocket::EAI_MAX
+# uninitialized constant Redis::Connection::TCPSocket::EAI_MEMORY
+# uninitialized constant Redis::Connection::TCPSocket::EAI_NODATA
+# uninitialized constant Redis::Connection::TCPSocket::EAI_NONAME
+# uninitialized constant Redis::Connection::TCPSocket::EAI_OVERFLOW
+# uninitialized constant Redis::Connection::TCPSocket::EAI_PROTOCOL
+# uninitialized constant Redis::Connection::TCPSocket::EAI_SERVICE
+# uninitialized constant Redis::Connection::TCPSocket::EAI_SOCKTYPE
+# uninitialized constant Redis::Connection::TCPSocket::EAI_SYSTEM
+# uninitialized constant Redis::Connection::TCPSocket::EXCL
+# uninitialized constant Redis::Connection::TCPSocket::Elem
+# uninitialized constant Redis::Connection::TCPSocket::FNM_CASEFOLD
+# uninitialized constant Redis::Connection::TCPSocket::FNM_DOTMATCH
+# uninitialized constant Redis::Connection::TCPSocket::FNM_EXTGLOB
+# uninitialized constant Redis::Connection::TCPSocket::FNM_NOESCAPE
+# uninitialized constant Redis::Connection::TCPSocket::FNM_PATHNAME
+# uninitialized constant Redis::Connection::TCPSocket::FNM_SHORTNAME
+# uninitialized constant Redis::Connection::TCPSocket::FNM_SYSCASE
+# uninitialized constant Redis::Connection::TCPSocket::IFF_ALLMULTI
+# uninitialized constant Redis::Connection::TCPSocket::IFF_ALTPHYS
+# uninitialized constant Redis::Connection::TCPSocket::IFF_BROADCAST
+# uninitialized constant Redis::Connection::TCPSocket::IFF_DEBUG
+# uninitialized constant Redis::Connection::TCPSocket::IFF_LINK0
+# uninitialized constant Redis::Connection::TCPSocket::IFF_LINK1
+# uninitialized constant Redis::Connection::TCPSocket::IFF_LINK2
+# uninitialized constant Redis::Connection::TCPSocket::IFF_LOOPBACK
+# uninitialized constant Redis::Connection::TCPSocket::IFF_MULTICAST
+# uninitialized constant Redis::Connection::TCPSocket::IFF_NOARP
+# uninitialized constant Redis::Connection::TCPSocket::IFF_NOTRAILERS
+# uninitialized constant Redis::Connection::TCPSocket::IFF_OACTIVE
+# uninitialized constant Redis::Connection::TCPSocket::IFF_POINTOPOINT
+# uninitialized constant Redis::Connection::TCPSocket::IFF_PROMISC
+# uninitialized constant Redis::Connection::TCPSocket::IFF_RUNNING
+# uninitialized constant Redis::Connection::TCPSocket::IFF_SIMPLEX
+# uninitialized constant Redis::Connection::TCPSocket::IFF_UP
+# uninitialized constant Redis::Connection::TCPSocket::IFNAMSIZ
+# uninitialized constant Redis::Connection::TCPSocket::IF_NAMESIZE
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_ALLHOSTS_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_ANY
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_BROADCAST
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_LOOPBACK
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_MAX_LOCAL_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_NONE
+# uninitialized constant Redis::Connection::TCPSocket::INADDR_UNSPEC_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::INET6_ADDRSTRLEN
+# uninitialized constant Redis::Connection::TCPSocket::INET_ADDRSTRLEN
+# uninitialized constant Redis::Connection::TCPSocket::IPPORT_RESERVED
+# uninitialized constant Redis::Connection::TCPSocket::IPPORT_USERRESERVED
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_AH
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_DSTOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_EGP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_EON
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_ESP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_FRAGMENT
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_GGP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_HELLO
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_HOPOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_ICMP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_ICMPV6
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_IDP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_IGMP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_IP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_IPV6
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_MAX
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_ND
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_NONE
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_PUP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_RAW
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_ROUTING
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_TCP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_TP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_UDP
+# uninitialized constant Redis::Connection::TCPSocket::IPPROTO_XTP
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_CHECKSUM
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_DONTFRAG
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_DSTOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_HOPLIMIT
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_HOPOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_JOIN_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_LEAVE_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_MULTICAST_HOPS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_MULTICAST_IF
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_NEXTHOP
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_PATHMTU
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_PKTINFO
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVDSTOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVHOPLIMIT
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVHOPOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVPATHMTU
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVPKTINFO
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVRTHDR
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RECVTCLASS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RTHDR
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RTHDRDSTOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_RTHDR_TYPE_0
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_TCLASS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_UNICAST_HOPS
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_USE_MIN_MTU
+# uninitialized constant Redis::Connection::TCPSocket::IPV6_V6ONLY
+# uninitialized constant Redis::Connection::TCPSocket::IP_ADD_MEMBERSHIP
+# uninitialized constant Redis::Connection::TCPSocket::IP_ADD_SOURCE_MEMBERSHIP
+# uninitialized constant Redis::Connection::TCPSocket::IP_BLOCK_SOURCE
+# uninitialized constant Redis::Connection::TCPSocket::IP_DEFAULT_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::TCPSocket::IP_DEFAULT_MULTICAST_TTL
+# uninitialized constant Redis::Connection::TCPSocket::IP_DROP_MEMBERSHIP
+# uninitialized constant Redis::Connection::TCPSocket::IP_DROP_SOURCE_MEMBERSHIP
+# uninitialized constant Redis::Connection::TCPSocket::IP_HDRINCL
+# uninitialized constant Redis::Connection::TCPSocket::IP_IPSEC_POLICY
+# uninitialized constant Redis::Connection::TCPSocket::IP_MAX_MEMBERSHIPS
+# uninitialized constant Redis::Connection::TCPSocket::IP_MSFILTER
+# uninitialized constant Redis::Connection::TCPSocket::IP_MULTICAST_IF
+# uninitialized constant Redis::Connection::TCPSocket::IP_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::TCPSocket::IP_MULTICAST_TTL
+# uninitialized constant Redis::Connection::TCPSocket::IP_OPTIONS
+# uninitialized constant Redis::Connection::TCPSocket::IP_PKTINFO
+# uninitialized constant Redis::Connection::TCPSocket::IP_PORTRANGE
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVDSTADDR
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVIF
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVRETOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVTOS
+# uninitialized constant Redis::Connection::TCPSocket::IP_RECVTTL
+# uninitialized constant Redis::Connection::TCPSocket::IP_RETOPTS
+# uninitialized constant Redis::Connection::TCPSocket::IP_TOS
+# uninitialized constant Redis::Connection::TCPSocket::IP_TTL
+# uninitialized constant Redis::Connection::TCPSocket::IP_UNBLOCK_SOURCE
+# uninitialized constant Redis::Connection::TCPSocket::LOCAL_PEERCRED
+# uninitialized constant Redis::Connection::TCPSocket::LOCK_EX
+# uninitialized constant Redis::Connection::TCPSocket::LOCK_NB
+# uninitialized constant Redis::Connection::TCPSocket::LOCK_SH
+# uninitialized constant Redis::Connection::TCPSocket::LOCK_UN
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_BLOCK_SOURCE
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_EXCLUDE
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_INCLUDE
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_JOIN_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_JOIN_SOURCE_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_LEAVE_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_LEAVE_SOURCE_GROUP
+# uninitialized constant Redis::Connection::TCPSocket::MCAST_UNBLOCK_SOURCE
+# uninitialized constant Redis::Connection::TCPSocket::MSG_CTRUNC
+# uninitialized constant Redis::Connection::TCPSocket::MSG_DONTROUTE
+# uninitialized constant Redis::Connection::TCPSocket::MSG_DONTWAIT
+# uninitialized constant Redis::Connection::TCPSocket::MSG_EOF
+# uninitialized constant Redis::Connection::TCPSocket::MSG_EOR
+# uninitialized constant Redis::Connection::TCPSocket::MSG_FLUSH
+# uninitialized constant Redis::Connection::TCPSocket::MSG_HAVEMORE
+# uninitialized constant Redis::Connection::TCPSocket::MSG_HOLD
+# uninitialized constant Redis::Connection::TCPSocket::MSG_OOB
+# uninitialized constant Redis::Connection::TCPSocket::MSG_PEEK
+# uninitialized constant Redis::Connection::TCPSocket::MSG_RCVMORE
+# uninitialized constant Redis::Connection::TCPSocket::MSG_SEND
+# uninitialized constant Redis::Connection::TCPSocket::MSG_TRUNC
+# uninitialized constant Redis::Connection::TCPSocket::MSG_WAITALL
+# uninitialized constant Redis::Connection::TCPSocket::NI_DGRAM
+# uninitialized constant Redis::Connection::TCPSocket::NI_MAXHOST
+# uninitialized constant Redis::Connection::TCPSocket::NI_MAXSERV
+# uninitialized constant Redis::Connection::TCPSocket::NI_NAMEREQD
+# uninitialized constant Redis::Connection::TCPSocket::NI_NOFQDN
+# uninitialized constant Redis::Connection::TCPSocket::NI_NUMERICHOST
+# uninitialized constant Redis::Connection::TCPSocket::NI_NUMERICSERV
+# uninitialized constant Redis::Connection::TCPSocket::NOCTTY
+# uninitialized constant Redis::Connection::TCPSocket::NOFOLLOW
+# uninitialized constant Redis::Connection::TCPSocket::NONBLOCK
+# uninitialized constant Redis::Connection::TCPSocket::NULL
+# uninitialized constant Redis::Connection::TCPSocket::PF_APPLETALK
+# uninitialized constant Redis::Connection::TCPSocket::PF_CCITT
+# uninitialized constant Redis::Connection::TCPSocket::PF_CHAOS
+# uninitialized constant Redis::Connection::TCPSocket::PF_CNT
+# uninitialized constant Redis::Connection::TCPSocket::PF_COIP
+# uninitialized constant Redis::Connection::TCPSocket::PF_DATAKIT
+# uninitialized constant Redis::Connection::TCPSocket::PF_DLI
+# uninitialized constant Redis::Connection::TCPSocket::PF_ECMA
+# uninitialized constant Redis::Connection::TCPSocket::PF_HYLINK
+# uninitialized constant Redis::Connection::TCPSocket::PF_IMPLINK
+# uninitialized constant Redis::Connection::TCPSocket::PF_INET
+# uninitialized constant Redis::Connection::TCPSocket::PF_INET6
+# uninitialized constant Redis::Connection::TCPSocket::PF_IPX
+# uninitialized constant Redis::Connection::TCPSocket::PF_ISDN
+# uninitialized constant Redis::Connection::TCPSocket::PF_ISO
+# uninitialized constant Redis::Connection::TCPSocket::PF_KEY
+# uninitialized constant Redis::Connection::TCPSocket::PF_LAT
+# uninitialized constant Redis::Connection::TCPSocket::PF_LINK
+# uninitialized constant Redis::Connection::TCPSocket::PF_LOCAL
+# uninitialized constant Redis::Connection::TCPSocket::PF_MAX
+# uninitialized constant Redis::Connection::TCPSocket::PF_NATM
+# uninitialized constant Redis::Connection::TCPSocket::PF_NDRV
+# uninitialized constant Redis::Connection::TCPSocket::PF_NETBIOS
+# uninitialized constant Redis::Connection::TCPSocket::PF_NS
+# uninitialized constant Redis::Connection::TCPSocket::PF_OSI
+# uninitialized constant Redis::Connection::TCPSocket::PF_PIP
+# uninitialized constant Redis::Connection::TCPSocket::PF_PPP
+# uninitialized constant Redis::Connection::TCPSocket::PF_PUP
+# uninitialized constant Redis::Connection::TCPSocket::PF_ROUTE
+# uninitialized constant Redis::Connection::TCPSocket::PF_RTIP
+# uninitialized constant Redis::Connection::TCPSocket::PF_SIP
+# uninitialized constant Redis::Connection::TCPSocket::PF_SNA
+# uninitialized constant Redis::Connection::TCPSocket::PF_SYSTEM
+# uninitialized constant Redis::Connection::TCPSocket::PF_UNIX
+# uninitialized constant Redis::Connection::TCPSocket::PF_UNSPEC
+# uninitialized constant Redis::Connection::TCPSocket::PF_XTP
+# uninitialized constant Redis::Connection::TCPSocket::RDONLY
+# uninitialized constant Redis::Connection::TCPSocket::RDWR
+# uninitialized constant Redis::Connection::TCPSocket::SCM_CREDS
+# uninitialized constant Redis::Connection::TCPSocket::SCM_RIGHTS
+# uninitialized constant Redis::Connection::TCPSocket::SCM_TIMESTAMP
+# uninitialized constant Redis::Connection::TCPSocket::SEEK_CUR
+# uninitialized constant Redis::Connection::TCPSocket::SEEK_DATA
+# uninitialized constant Redis::Connection::TCPSocket::SEEK_END
+# uninitialized constant Redis::Connection::TCPSocket::SEEK_HOLE
+# uninitialized constant Redis::Connection::TCPSocket::SEEK_SET
+# uninitialized constant Redis::Connection::TCPSocket::SHARE_DELETE
+# uninitialized constant Redis::Connection::TCPSocket::SHUT_RD
+# uninitialized constant Redis::Connection::TCPSocket::SHUT_RDWR
+# uninitialized constant Redis::Connection::TCPSocket::SHUT_WR
+# uninitialized constant Redis::Connection::TCPSocket::SOCK_DGRAM
+# uninitialized constant Redis::Connection::TCPSocket::SOCK_RAW
+# uninitialized constant Redis::Connection::TCPSocket::SOCK_RDM
+# uninitialized constant Redis::Connection::TCPSocket::SOCK_SEQPACKET
+# uninitialized constant Redis::Connection::TCPSocket::SOCK_STREAM
+# uninitialized constant Redis::Connection::TCPSocket::SOL_SOCKET
+# uninitialized constant Redis::Connection::TCPSocket::SOMAXCONN
+# uninitialized constant Redis::Connection::TCPSocket::SO_ACCEPTCONN
+# uninitialized constant Redis::Connection::TCPSocket::SO_BROADCAST
+# uninitialized constant Redis::Connection::TCPSocket::SO_DEBUG
+# uninitialized constant Redis::Connection::TCPSocket::SO_DONTROUTE
+# uninitialized constant Redis::Connection::TCPSocket::SO_DONTTRUNC
+# uninitialized constant Redis::Connection::TCPSocket::SO_ERROR
+# uninitialized constant Redis::Connection::TCPSocket::SO_KEEPALIVE
+# uninitialized constant Redis::Connection::TCPSocket::SO_LINGER
+# uninitialized constant Redis::Connection::TCPSocket::SO_NKE
+# uninitialized constant Redis::Connection::TCPSocket::SO_NOSIGPIPE
+# uninitialized constant Redis::Connection::TCPSocket::SO_NREAD
+# uninitialized constant Redis::Connection::TCPSocket::SO_OOBINLINE
+# uninitialized constant Redis::Connection::TCPSocket::SO_RCVBUF
+# uninitialized constant Redis::Connection::TCPSocket::SO_RCVLOWAT
+# uninitialized constant Redis::Connection::TCPSocket::SO_RCVTIMEO
+# uninitialized constant Redis::Connection::TCPSocket::SO_REUSEADDR
+# uninitialized constant Redis::Connection::TCPSocket::SO_REUSEPORT
+# uninitialized constant Redis::Connection::TCPSocket::SO_SNDBUF
+# uninitialized constant Redis::Connection::TCPSocket::SO_SNDLOWAT
+# uninitialized constant Redis::Connection::TCPSocket::SO_SNDTIMEO
+# uninitialized constant Redis::Connection::TCPSocket::SO_TIMESTAMP
+# uninitialized constant Redis::Connection::TCPSocket::SO_TYPE
+# uninitialized constant Redis::Connection::TCPSocket::SO_USELOOPBACK
+# uninitialized constant Redis::Connection::TCPSocket::SO_WANTMORE
+# uninitialized constant Redis::Connection::TCPSocket::SO_WANTOOBFLAG
+# uninitialized constant Redis::Connection::TCPSocket::SYNC
+# uninitialized constant Redis::Connection::TCPSocket::TCP_FASTOPEN
+# uninitialized constant Redis::Connection::TCPSocket::TCP_KEEPCNT
+# uninitialized constant Redis::Connection::TCPSocket::TCP_KEEPINTVL
+# uninitialized constant Redis::Connection::TCPSocket::TCP_MAXSEG
+# uninitialized constant Redis::Connection::TCPSocket::TCP_NODELAY
+# uninitialized constant Redis::Connection::TCPSocket::TCP_NOOPT
+# uninitialized constant Redis::Connection::TCPSocket::TCP_NOPUSH
+# uninitialized constant Redis::Connection::TCPSocket::TRUNC
+# uninitialized constant Redis::Connection::TCPSocket::WRONLY
+# wrong constant name <static-init>
+# wrong constant name connect
+# wrong constant name connect_addrinfo
+# uninitialized constant Redis::Connection::UNIXSocket::AF_APPLETALK
+# uninitialized constant Redis::Connection::UNIXSocket::AF_CCITT
+# uninitialized constant Redis::Connection::UNIXSocket::AF_CHAOS
+# uninitialized constant Redis::Connection::UNIXSocket::AF_CNT
+# uninitialized constant Redis::Connection::UNIXSocket::AF_COIP
+# uninitialized constant Redis::Connection::UNIXSocket::AF_DATAKIT
+# uninitialized constant Redis::Connection::UNIXSocket::AF_DLI
+# uninitialized constant Redis::Connection::UNIXSocket::AF_E164
+# uninitialized constant Redis::Connection::UNIXSocket::AF_ECMA
+# uninitialized constant Redis::Connection::UNIXSocket::AF_HYLINK
+# uninitialized constant Redis::Connection::UNIXSocket::AF_IMPLINK
+# uninitialized constant Redis::Connection::UNIXSocket::AF_INET
+# uninitialized constant Redis::Connection::UNIXSocket::AF_INET6
+# uninitialized constant Redis::Connection::UNIXSocket::AF_IPX
+# uninitialized constant Redis::Connection::UNIXSocket::AF_ISDN
+# uninitialized constant Redis::Connection::UNIXSocket::AF_ISO
+# uninitialized constant Redis::Connection::UNIXSocket::AF_LAT
+# uninitialized constant Redis::Connection::UNIXSocket::AF_LINK
+# uninitialized constant Redis::Connection::UNIXSocket::AF_LOCAL
+# uninitialized constant Redis::Connection::UNIXSocket::AF_MAX
+# uninitialized constant Redis::Connection::UNIXSocket::AF_NATM
+# uninitialized constant Redis::Connection::UNIXSocket::AF_NDRV
+# uninitialized constant Redis::Connection::UNIXSocket::AF_NETBIOS
+# uninitialized constant Redis::Connection::UNIXSocket::AF_NS
+# uninitialized constant Redis::Connection::UNIXSocket::AF_OSI
+# uninitialized constant Redis::Connection::UNIXSocket::AF_PPP
+# uninitialized constant Redis::Connection::UNIXSocket::AF_PUP
+# uninitialized constant Redis::Connection::UNIXSocket::AF_ROUTE
+# uninitialized constant Redis::Connection::UNIXSocket::AF_SIP
+# uninitialized constant Redis::Connection::UNIXSocket::AF_SNA
+# uninitialized constant Redis::Connection::UNIXSocket::AF_SYSTEM
+# uninitialized constant Redis::Connection::UNIXSocket::AF_UNIX
+# uninitialized constant Redis::Connection::UNIXSocket::AF_UNSPEC
+# uninitialized constant Redis::Connection::UNIXSocket::AI_ADDRCONFIG
+# uninitialized constant Redis::Connection::UNIXSocket::AI_ALL
+# uninitialized constant Redis::Connection::UNIXSocket::AI_CANONNAME
+# uninitialized constant Redis::Connection::UNIXSocket::AI_DEFAULT
+# uninitialized constant Redis::Connection::UNIXSocket::AI_MASK
+# uninitialized constant Redis::Connection::UNIXSocket::AI_NUMERICHOST
+# uninitialized constant Redis::Connection::UNIXSocket::AI_NUMERICSERV
+# uninitialized constant Redis::Connection::UNIXSocket::AI_PASSIVE
+# uninitialized constant Redis::Connection::UNIXSocket::AI_V4MAPPED
+# uninitialized constant Redis::Connection::UNIXSocket::AI_V4MAPPED_CFG
+# uninitialized constant Redis::Connection::UNIXSocket::APPEND
+# uninitialized constant Redis::Connection::UNIXSocket::BINARY
+# uninitialized constant Redis::Connection::UNIXSocket::CREAT
+# uninitialized constant Redis::Connection::UNIXSocket::CRLF
+# uninitialized constant Redis::Connection::UNIXSocket::DSYNC
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_ADDRFAMILY
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_AGAIN
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_BADFLAGS
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_BADHINTS
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_FAIL
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_FAMILY
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_MAX
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_MEMORY
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_NODATA
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_NONAME
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_OVERFLOW
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_PROTOCOL
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_SERVICE
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_SOCKTYPE
+# uninitialized constant Redis::Connection::UNIXSocket::EAI_SYSTEM
+# uninitialized constant Redis::Connection::UNIXSocket::EXCL
+# uninitialized constant Redis::Connection::UNIXSocket::Elem
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_CASEFOLD
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_DOTMATCH
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_EXTGLOB
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_NOESCAPE
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_PATHNAME
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_SHORTNAME
+# uninitialized constant Redis::Connection::UNIXSocket::FNM_SYSCASE
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_ALLMULTI
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_ALTPHYS
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_BROADCAST
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_DEBUG
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_LINK0
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_LINK1
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_LINK2
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_LOOPBACK
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_MULTICAST
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_NOARP
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_NOTRAILERS
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_OACTIVE
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_POINTOPOINT
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_PROMISC
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_RUNNING
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_SIMPLEX
+# uninitialized constant Redis::Connection::UNIXSocket::IFF_UP
+# uninitialized constant Redis::Connection::UNIXSocket::IFNAMSIZ
+# uninitialized constant Redis::Connection::UNIXSocket::IF_NAMESIZE
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_ALLHOSTS_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_ANY
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_BROADCAST
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_LOOPBACK
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_MAX_LOCAL_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_NONE
+# uninitialized constant Redis::Connection::UNIXSocket::INADDR_UNSPEC_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::INET6_ADDRSTRLEN
+# uninitialized constant Redis::Connection::UNIXSocket::INET_ADDRSTRLEN
+# uninitialized constant Redis::Connection::UNIXSocket::IPPORT_RESERVED
+# uninitialized constant Redis::Connection::UNIXSocket::IPPORT_USERRESERVED
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_AH
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_DSTOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_EGP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_EON
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_ESP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_FRAGMENT
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_GGP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_HELLO
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_HOPOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_ICMP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_ICMPV6
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_IDP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_IGMP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_IP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_IPV6
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_MAX
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_ND
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_NONE
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_PUP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_RAW
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_ROUTING
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_TCP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_TP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_UDP
+# uninitialized constant Redis::Connection::UNIXSocket::IPPROTO_XTP
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_CHECKSUM
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_DONTFRAG
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_DSTOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_HOPLIMIT
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_HOPOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_JOIN_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_LEAVE_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_MULTICAST_HOPS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_MULTICAST_IF
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_NEXTHOP
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_PATHMTU
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_PKTINFO
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVDSTOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVHOPLIMIT
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVHOPOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVPATHMTU
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVPKTINFO
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVRTHDR
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RECVTCLASS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RTHDR
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RTHDRDSTOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_RTHDR_TYPE_0
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_TCLASS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_UNICAST_HOPS
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_USE_MIN_MTU
+# uninitialized constant Redis::Connection::UNIXSocket::IPV6_V6ONLY
+# uninitialized constant Redis::Connection::UNIXSocket::IP_ADD_MEMBERSHIP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_ADD_SOURCE_MEMBERSHIP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_BLOCK_SOURCE
+# uninitialized constant Redis::Connection::UNIXSocket::IP_DEFAULT_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_DEFAULT_MULTICAST_TTL
+# uninitialized constant Redis::Connection::UNIXSocket::IP_DROP_MEMBERSHIP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_DROP_SOURCE_MEMBERSHIP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_HDRINCL
+# uninitialized constant Redis::Connection::UNIXSocket::IP_IPSEC_POLICY
+# uninitialized constant Redis::Connection::UNIXSocket::IP_MAX_MEMBERSHIPS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_MSFILTER
+# uninitialized constant Redis::Connection::UNIXSocket::IP_MULTICAST_IF
+# uninitialized constant Redis::Connection::UNIXSocket::IP_MULTICAST_LOOP
+# uninitialized constant Redis::Connection::UNIXSocket::IP_MULTICAST_TTL
+# uninitialized constant Redis::Connection::UNIXSocket::IP_OPTIONS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_PKTINFO
+# uninitialized constant Redis::Connection::UNIXSocket::IP_PORTRANGE
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVDSTADDR
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVIF
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVRETOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVTOS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RECVTTL
+# uninitialized constant Redis::Connection::UNIXSocket::IP_RETOPTS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_TOS
+# uninitialized constant Redis::Connection::UNIXSocket::IP_TTL
+# uninitialized constant Redis::Connection::UNIXSocket::IP_UNBLOCK_SOURCE
+# uninitialized constant Redis::Connection::UNIXSocket::LOCAL_PEERCRED
+# uninitialized constant Redis::Connection::UNIXSocket::LOCK_EX
+# uninitialized constant Redis::Connection::UNIXSocket::LOCK_NB
+# uninitialized constant Redis::Connection::UNIXSocket::LOCK_SH
+# uninitialized constant Redis::Connection::UNIXSocket::LOCK_UN
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_BLOCK_SOURCE
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_EXCLUDE
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_INCLUDE
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_JOIN_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_JOIN_SOURCE_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_LEAVE_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_LEAVE_SOURCE_GROUP
+# uninitialized constant Redis::Connection::UNIXSocket::MCAST_UNBLOCK_SOURCE
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_CTRUNC
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_DONTROUTE
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_DONTWAIT
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_EOF
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_EOR
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_FLUSH
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_HAVEMORE
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_HOLD
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_OOB
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_PEEK
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_RCVMORE
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_SEND
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_TRUNC
+# uninitialized constant Redis::Connection::UNIXSocket::MSG_WAITALL
+# uninitialized constant Redis::Connection::UNIXSocket::NI_DGRAM
+# uninitialized constant Redis::Connection::UNIXSocket::NI_MAXHOST
+# uninitialized constant Redis::Connection::UNIXSocket::NI_MAXSERV
+# uninitialized constant Redis::Connection::UNIXSocket::NI_NAMEREQD
+# uninitialized constant Redis::Connection::UNIXSocket::NI_NOFQDN
+# uninitialized constant Redis::Connection::UNIXSocket::NI_NUMERICHOST
+# uninitialized constant Redis::Connection::UNIXSocket::NI_NUMERICSERV
+# uninitialized constant Redis::Connection::UNIXSocket::NOCTTY
+# uninitialized constant Redis::Connection::UNIXSocket::NOFOLLOW
+# uninitialized constant Redis::Connection::UNIXSocket::NONBLOCK
+# uninitialized constant Redis::Connection::UNIXSocket::NULL
+# uninitialized constant Redis::Connection::UNIXSocket::PF_APPLETALK
+# uninitialized constant Redis::Connection::UNIXSocket::PF_CCITT
+# uninitialized constant Redis::Connection::UNIXSocket::PF_CHAOS
+# uninitialized constant Redis::Connection::UNIXSocket::PF_CNT
+# uninitialized constant Redis::Connection::UNIXSocket::PF_COIP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_DATAKIT
+# uninitialized constant Redis::Connection::UNIXSocket::PF_DLI
+# uninitialized constant Redis::Connection::UNIXSocket::PF_ECMA
+# uninitialized constant Redis::Connection::UNIXSocket::PF_HYLINK
+# uninitialized constant Redis::Connection::UNIXSocket::PF_IMPLINK
+# uninitialized constant Redis::Connection::UNIXSocket::PF_INET
+# uninitialized constant Redis::Connection::UNIXSocket::PF_INET6
+# uninitialized constant Redis::Connection::UNIXSocket::PF_IPX
+# uninitialized constant Redis::Connection::UNIXSocket::PF_ISDN
+# uninitialized constant Redis::Connection::UNIXSocket::PF_ISO
+# uninitialized constant Redis::Connection::UNIXSocket::PF_KEY
+# uninitialized constant Redis::Connection::UNIXSocket::PF_LAT
+# uninitialized constant Redis::Connection::UNIXSocket::PF_LINK
+# uninitialized constant Redis::Connection::UNIXSocket::PF_LOCAL
+# uninitialized constant Redis::Connection::UNIXSocket::PF_MAX
+# uninitialized constant Redis::Connection::UNIXSocket::PF_NATM
+# uninitialized constant Redis::Connection::UNIXSocket::PF_NDRV
+# uninitialized constant Redis::Connection::UNIXSocket::PF_NETBIOS
+# uninitialized constant Redis::Connection::UNIXSocket::PF_NS
+# uninitialized constant Redis::Connection::UNIXSocket::PF_OSI
+# uninitialized constant Redis::Connection::UNIXSocket::PF_PIP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_PPP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_PUP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_ROUTE
+# uninitialized constant Redis::Connection::UNIXSocket::PF_RTIP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_SIP
+# uninitialized constant Redis::Connection::UNIXSocket::PF_SNA
+# uninitialized constant Redis::Connection::UNIXSocket::PF_SYSTEM
+# uninitialized constant Redis::Connection::UNIXSocket::PF_UNIX
+# uninitialized constant Redis::Connection::UNIXSocket::PF_UNSPEC
+# uninitialized constant Redis::Connection::UNIXSocket::PF_XTP
+# uninitialized constant Redis::Connection::UNIXSocket::RDONLY
+# uninitialized constant Redis::Connection::UNIXSocket::RDWR
+# uninitialized constant Redis::Connection::UNIXSocket::SCM_CREDS
+# uninitialized constant Redis::Connection::UNIXSocket::SCM_RIGHTS
+# uninitialized constant Redis::Connection::UNIXSocket::SCM_TIMESTAMP
+# uninitialized constant Redis::Connection::UNIXSocket::SEEK_CUR
+# uninitialized constant Redis::Connection::UNIXSocket::SEEK_DATA
+# uninitialized constant Redis::Connection::UNIXSocket::SEEK_END
+# uninitialized constant Redis::Connection::UNIXSocket::SEEK_HOLE
+# uninitialized constant Redis::Connection::UNIXSocket::SEEK_SET
+# uninitialized constant Redis::Connection::UNIXSocket::SHARE_DELETE
+# uninitialized constant Redis::Connection::UNIXSocket::SHUT_RD
+# uninitialized constant Redis::Connection::UNIXSocket::SHUT_RDWR
+# uninitialized constant Redis::Connection::UNIXSocket::SHUT_WR
+# uninitialized constant Redis::Connection::UNIXSocket::SOCK_DGRAM
+# uninitialized constant Redis::Connection::UNIXSocket::SOCK_RAW
+# uninitialized constant Redis::Connection::UNIXSocket::SOCK_RDM
+# uninitialized constant Redis::Connection::UNIXSocket::SOCK_SEQPACKET
+# uninitialized constant Redis::Connection::UNIXSocket::SOCK_STREAM
+# uninitialized constant Redis::Connection::UNIXSocket::SOL_SOCKET
+# uninitialized constant Redis::Connection::UNIXSocket::SOMAXCONN
+# uninitialized constant Redis::Connection::UNIXSocket::SO_ACCEPTCONN
+# uninitialized constant Redis::Connection::UNIXSocket::SO_BROADCAST
+# uninitialized constant Redis::Connection::UNIXSocket::SO_DEBUG
+# uninitialized constant Redis::Connection::UNIXSocket::SO_DONTROUTE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_DONTTRUNC
+# uninitialized constant Redis::Connection::UNIXSocket::SO_ERROR
+# uninitialized constant Redis::Connection::UNIXSocket::SO_KEEPALIVE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_LINGER
+# uninitialized constant Redis::Connection::UNIXSocket::SO_NKE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_NOSIGPIPE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_NREAD
+# uninitialized constant Redis::Connection::UNIXSocket::SO_OOBINLINE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_RCVBUF
+# uninitialized constant Redis::Connection::UNIXSocket::SO_RCVLOWAT
+# uninitialized constant Redis::Connection::UNIXSocket::SO_RCVTIMEO
+# uninitialized constant Redis::Connection::UNIXSocket::SO_REUSEADDR
+# uninitialized constant Redis::Connection::UNIXSocket::SO_REUSEPORT
+# uninitialized constant Redis::Connection::UNIXSocket::SO_SNDBUF
+# uninitialized constant Redis::Connection::UNIXSocket::SO_SNDLOWAT
+# uninitialized constant Redis::Connection::UNIXSocket::SO_SNDTIMEO
+# uninitialized constant Redis::Connection::UNIXSocket::SO_TIMESTAMP
+# uninitialized constant Redis::Connection::UNIXSocket::SO_TYPE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_USELOOPBACK
+# uninitialized constant Redis::Connection::UNIXSocket::SO_WANTMORE
+# uninitialized constant Redis::Connection::UNIXSocket::SO_WANTOOBFLAG
+# uninitialized constant Redis::Connection::UNIXSocket::SYNC
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_FASTOPEN
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_KEEPCNT
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_KEEPINTVL
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_MAXSEG
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_NODELAY
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_NOOPT
+# uninitialized constant Redis::Connection::UNIXSocket::TCP_NOPUSH
+# uninitialized constant Redis::Connection::UNIXSocket::TRUNC
+# uninitialized constant Redis::Connection::UNIXSocket::WRONLY
+# wrong constant name <static-init>
+# wrong constant name connect
+# wrong constant name <static-init>
+# wrong constant name drivers
+# wrong constant name <static-init>
+# wrong constant name <Class:CannotDistribute>
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name _bpop
+# wrong constant name _eval
+# wrong constant name add_node
+# wrong constant name append
+# wrong constant name bgsave
+# wrong constant name bitcount
+# wrong constant name bitop
+# wrong constant name bitpos
+# wrong constant name blpop
+# wrong constant name brpop
+# wrong constant name brpoplpush
+# wrong constant name dbsize
+# wrong constant name decr
+# wrong constant name decrby
+# wrong constant name del
+# wrong constant name discard
+# wrong constant name dump
+# wrong constant name echo
+# wrong constant name ensure_same_node
+# wrong constant name eval
+# wrong constant name evalsha
+# wrong constant name exec
+# wrong constant name exists
+# wrong constant name expire
+# wrong constant name expireat
+# wrong constant name flushall
+# wrong constant name flushdb
+# wrong constant name get
+# wrong constant name getbit
+# wrong constant name getrange
+# wrong constant name getset
+# wrong constant name hdel
+# wrong constant name hexists
+# wrong constant name hget
+# wrong constant name hgetall
+# wrong constant name hincrby
+# wrong constant name hincrbyfloat
+# wrong constant name hkeys
+# wrong constant name hlen
+# wrong constant name hmget
+# wrong constant name hmset
+# wrong constant name hset
+# wrong constant name hsetnx
+# wrong constant name hvals
+# wrong constant name incr
+# wrong constant name incrby
+# wrong constant name incrbyfloat
+# wrong constant name info
+# wrong constant name initialize
+# wrong constant name key_tag
+# wrong constant name keys
+# wrong constant name lastsave
+# wrong constant name lindex
+# wrong constant name linsert
+# wrong constant name llen
+# wrong constant name lpop
+# wrong constant name lpush
+# wrong constant name lpushx
+# wrong constant name lrange
+# wrong constant name lrem
+# wrong constant name lset
+# wrong constant name ltrim
+# wrong constant name mapped_hmget
+# wrong constant name mapped_hmset
+# wrong constant name mapped_mget
+# wrong constant name mapped_mset
+# wrong constant name mapped_msetnx
+# wrong constant name mget
+# wrong constant name migrate
+# wrong constant name monitor
+# wrong constant name move
+# wrong constant name mset
+# wrong constant name msetnx
+# wrong constant name multi
+# wrong constant name node_for
+# wrong constant name node_index_for
+# wrong constant name nodes
+# wrong constant name on_each_node
+# wrong constant name persist
+# wrong constant name pexpire
+# wrong constant name pexpireat
+# wrong constant name pfadd
+# wrong constant name pfcount
+# wrong constant name pfmerge
+# wrong constant name ping
+# wrong constant name pipelined
+# wrong constant name psetex
+# wrong constant name psubscribe
+# wrong constant name pttl
+# wrong constant name publish
+# wrong constant name punsubscribe
+# wrong constant name quit
+# wrong constant name randomkey
+# wrong constant name rename
+# wrong constant name renamenx
+# wrong constant name restore
+# wrong constant name ring
+# wrong constant name rpop
+# wrong constant name rpoplpush
+# wrong constant name rpush
+# wrong constant name rpushx
+# wrong constant name sadd
+# wrong constant name save
+# wrong constant name scard
+# wrong constant name script
+# wrong constant name sdiff
+# wrong constant name sdiffstore
+# wrong constant name select
+# wrong constant name set
+# wrong constant name setbit
+# wrong constant name setex
+# wrong constant name setnx
+# wrong constant name setrange
+# wrong constant name sinter
+# wrong constant name sinterstore
+# wrong constant name sismember
+# wrong constant name smembers
+# wrong constant name smove
+# wrong constant name sort
+# wrong constant name spop
+# wrong constant name srandmember
+# wrong constant name srem
+# wrong constant name sscan
+# wrong constant name sscan_each
+# wrong constant name strlen
+# wrong constant name subscribe
+# wrong constant name subscribed?
+# wrong constant name sunion
+# wrong constant name sunionstore
+# wrong constant name time
+# wrong constant name ttl
+# wrong constant name type
+# wrong constant name unlink
+# wrong constant name unsubscribe
+# wrong constant name unwatch
+# wrong constant name watch
+# wrong constant name zadd
+# wrong constant name zcard
+# wrong constant name zcount
+# wrong constant name zincrby
+# wrong constant name zinterstore
+# wrong constant name zrange
+# wrong constant name zrangebyscore
+# wrong constant name zrank
+# wrong constant name zrem
+# wrong constant name zremrangebyrank
+# wrong constant name zremrangebyscore
+# wrong constant name zrevrange
+# wrong constant name zrevrangebyscore
+# wrong constant name zrevrank
+# wrong constant name zscore
+# wrong constant name zunionstore
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name _command
+# wrong constant name _set
+# wrong constant name class
+# wrong constant name initialize
+# wrong constant name inspect
+# wrong constant name is_a?
+# wrong constant name timeout
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name add_node
+# wrong constant name get_node
+# wrong constant name get_node_pos
+# wrong constant name initialize
+# wrong constant name iter_nodes
+# wrong constant name nodes
+# wrong constant name remove_node
+# wrong constant name replicas
+# wrong constant name ring
+# wrong constant name sorted_keys
+# wrong constant name <static-init>
+# wrong constant name binary_search
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Multi>
+# wrong constant name call
+# wrong constant name call_pipeline
+# wrong constant name call_with_timeout
+# wrong constant name client
+# wrong constant name commands
+# wrong constant name db
+# wrong constant name db=
+# wrong constant name empty?
+# wrong constant name finish
+# wrong constant name futures
+# wrong constant name initialize
+# wrong constant name shutdown?
+# wrong constant name timeout
+# wrong constant name timeouts
+# wrong constant name with_reconnect
+# wrong constant name with_reconnect?
+# wrong constant name without_reconnect
+# wrong constant name without_reconnect?
+# wrong constant name finish
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name psubscribe
+# wrong constant name psubscribe_with_timeout
+# wrong constant name punsubscribe
+# wrong constant name subscribe
+# wrong constant name subscribe_with_timeout
+# wrong constant name subscription
+# wrong constant name unsubscribe
+# wrong constant name <static-init>
+# wrong constant name callbacks
+# wrong constant name message
+# wrong constant name pmessage
+# wrong constant name psubscribe
+# wrong constant name punsubscribe
+# wrong constant name subscribe
+# wrong constant name unsubscribe
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name current
+# wrong constant name current=
 # wrong constant name match?
 # wrong constant name multiline?
 # wrong constant name union

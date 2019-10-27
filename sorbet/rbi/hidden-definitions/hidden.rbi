@@ -19236,6 +19236,13 @@ module ActiveSupport::Cache
   UNIVERSAL_OPTIONS = ::T.let(nil, ::T.untyped)
 end
 
+module ActiveSupport::Cache::ConnectionPoolLike
+  def with(); end
+end
+
+module ActiveSupport::Cache::ConnectionPoolLike
+end
+
 class ActiveSupport::Cache::Entry
   def dup_value!(); end
 
@@ -19314,6 +19321,37 @@ class ActiveSupport::Cache::NullStore
 end
 
 class ActiveSupport::Cache::NullStore
+  def self.supports_cache_versioning?(); end
+end
+
+class ActiveSupport::Cache::RedisCacheStore
+  include ::ActiveSupport::Cache::Strategy::LocalCache
+  include ::ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+  def initialize(namespace: T.unsafe(nil), compress: T.unsafe(nil), compress_threshold: T.unsafe(nil), expires_in: T.unsafe(nil), race_condition_ttl: T.unsafe(nil), error_handler: T.unsafe(nil), **redis_options); end
+
+  def max_key_bytesize(); end
+
+  def mget_capable?(); end
+
+  def mset_capable?(); end
+
+  def redis(); end
+
+  def redis_options(); end
+  DEFAULT_ERROR_HANDLER = ::T.let(nil, ::T.untyped)
+  DEFAULT_REDIS_OPTIONS = ::T.let(nil, ::T.untyped)
+  MAX_KEY_BYTESIZE = ::T.let(nil, ::T.untyped)
+end
+
+module ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+end
+
+module ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+end
+
+class ActiveSupport::Cache::RedisCacheStore
+  def self.build_redis(redis: T.unsafe(nil), url: T.unsafe(nil), **redis_options); end
+
   def self.supports_cache_versioning?(); end
 end
 
@@ -38139,9 +38177,13 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
+class Net::HTTPClientError
+end
 
-Net::HTTPClientErrorCode = Net::HTTPClientError
+Net::HTTPClientErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
+
+class Net::HTTPClientError
+end
 
 Net::HTTPClientException = Net::HTTPServerException
 
@@ -38215,8 +38257,6 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
-Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
-
 Net::HTTPRedirectionCode = Net::HTTPRedirection
 
 class Net::HTTPRequestTimeout
@@ -38230,9 +38270,13 @@ Net::HTTPRequestURITooLarge = Net::HTTPURITooLong
 
 Net::HTTPResponceReceiver = Net::HTTPResponse
 
-Net::HTTPRetriableCode = Net::HTTPRedirection
+class Net::HTTPRedirection
+end
 
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
+Net::HTTPRetriableCode::EXCEPTION_TYPE = Net::HTTPRetriableError
+
+class Net::HTTPRedirection
+end
 
 Net::HTTPServerErrorCode = Net::HTTPServerError
 
@@ -38246,9 +38290,13 @@ Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
 class Net::HTTP
 end
 
-Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTPSuccess
+end
 
-Net::HTTPSuccessCode = Net::HTTPSuccess
+Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPSuccess
+end
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -40498,6 +40546,12 @@ module OpenSSL::SSL
   TLS1_2_VERSION = ::T.let(nil, ::T.untyped)
   TLS1_3_VERSION = ::T.let(nil, ::T.untyped)
   TLS1_VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class OpenSSL::SSL::SSLSocket
+  def alpn_protocol(); end
+
+  def tmp_key(); end
 end
 
 module OpenSSL::X509
@@ -52240,6 +52294,1376 @@ module Readline
   def self.vi_editing_mode(); end
 
   def self.vi_editing_mode?(); end
+end
+
+class Redis
+  include ::MonitorMixin
+  include ::ActiveSupport::Cache::ConnectionPoolLike
+  def _bpop(cmd, args, &blk); end
+
+  def _client(); end
+
+  def _eval(cmd, args); end
+
+  def _scan(command, cursor, args, options=T.unsafe(nil), &block); end
+
+  def append(key, value); end
+
+  def asking(); end
+
+  def auth(password); end
+
+  def bgrewriteaof(); end
+
+  def bgsave(); end
+
+  def bitcount(key, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def bitop(operation, destkey, *keys); end
+
+  def bitpos(key, bit, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def blpop(*args); end
+
+  def brpop(*args); end
+
+  def brpoplpush(source, destination, options=T.unsafe(nil)); end
+
+  def bzpopmax(*args); end
+
+  def bzpopmin(*args); end
+
+  def call(*command); end
+
+  def client(subcommand=T.unsafe(nil), *args); end
+
+  def close(); end
+
+  def cluster(subcommand, *args); end
+
+  def commit(); end
+
+  def config(action, *args); end
+
+  def connected?(); end
+
+  def connection(); end
+
+  def dbsize(); end
+
+  def debug(*args); end
+
+  def decr(key); end
+
+  def decrby(key, decrement); end
+
+  def del(*keys); end
+
+  def discard(); end
+
+  def disconnect!(); end
+
+  def dump(key); end
+
+  def echo(value); end
+
+  def eval(*args); end
+
+  def evalsha(*args); end
+
+  def exec(); end
+
+  def exists(key); end
+
+  def expire(key, seconds); end
+
+  def expireat(key, unix_time); end
+
+  def flushall(options=T.unsafe(nil)); end
+
+  def flushdb(options=T.unsafe(nil)); end
+
+  def geoadd(key, *member); end
+
+  def geodist(key, member1, member2, unit=T.unsafe(nil)); end
+
+  def geohash(key, member); end
+
+  def geopos(key, member); end
+
+  def georadius(*args, **geoptions); end
+
+  def georadiusbymember(*args, **geoptions); end
+
+  def get(key); end
+
+  def getbit(key, offset); end
+
+  def getrange(key, start, stop); end
+
+  def getset(key, value); end
+
+  def hdel(key, *fields); end
+
+  def hexists(key, field); end
+
+  def hget(key, field); end
+
+  def hgetall(key); end
+
+  def hincrby(key, field, increment); end
+
+  def hincrbyfloat(key, field, increment); end
+
+  def hkeys(key); end
+
+  def hlen(key); end
+
+  def hmget(key, *fields, &blk); end
+
+  def hmset(key, *attrs); end
+
+  def hscan(key, cursor, options=T.unsafe(nil)); end
+
+  def hscan_each(key, options=T.unsafe(nil), &block); end
+
+  def hset(key, field, value); end
+
+  def hsetnx(key, field, value); end
+
+  def hvals(key); end
+
+  def id(); end
+
+  def incr(key); end
+
+  def incrby(key, increment); end
+
+  def incrbyfloat(key, increment); end
+
+  def info(cmd=T.unsafe(nil)); end
+
+  def initialize(options=T.unsafe(nil)); end
+
+  def keys(pattern=T.unsafe(nil)); end
+
+  def lastsave(); end
+
+  def lindex(key, index); end
+
+  def linsert(key, where, pivot, value); end
+
+  def llen(key); end
+
+  def lpop(key); end
+
+  def lpush(key, value); end
+
+  def lpushx(key, value); end
+
+  def lrange(key, start, stop); end
+
+  def lrem(key, count, value); end
+
+  def lset(key, index, value); end
+
+  def ltrim(key, start, stop); end
+
+  def mapped_hmget(key, *fields); end
+
+  def mapped_hmset(key, hash); end
+
+  def mapped_mget(*keys); end
+
+  def mapped_mset(hash); end
+
+  def mapped_msetnx(hash); end
+
+  def method_missing(command, *args); end
+
+  def mget(*keys, &blk); end
+
+  def migrate(key, options); end
+
+  def monitor(&block); end
+
+  def move(key, db); end
+
+  def mset(*args); end
+
+  def msetnx(*args); end
+
+  def multi(); end
+
+  def object(*args); end
+
+  def persist(key); end
+
+  def pexpire(key, milliseconds); end
+
+  def pexpireat(key, ms_unix_time); end
+
+  def pfadd(key, member); end
+
+  def pfcount(*keys); end
+
+  def pfmerge(dest_key, *source_key); end
+
+  def ping(message=T.unsafe(nil)); end
+
+  def pipelined(); end
+
+  def psetex(key, ttl, value); end
+
+  def psubscribe(*channels, &block); end
+
+  def psubscribe_with_timeout(timeout, *channels, &block); end
+
+  def pttl(key); end
+
+  def publish(channel, message); end
+
+  def pubsub(subcommand, *args); end
+
+  def punsubscribe(*channels); end
+
+  def queue(*command); end
+
+  def quit(); end
+
+  def randomkey(); end
+
+  def rename(old_name, new_name); end
+
+  def renamenx(old_name, new_name); end
+
+  def restore(key, ttl, serialized_value, options=T.unsafe(nil)); end
+
+  def rpop(key); end
+
+  def rpoplpush(source, destination); end
+
+  def rpush(key, value); end
+
+  def rpushx(key, value); end
+
+  def sadd(key, member); end
+
+  def save(); end
+
+  def scan(cursor, options=T.unsafe(nil)); end
+
+  def scan_each(options=T.unsafe(nil), &block); end
+
+  def scard(key); end
+
+  def script(subcommand, *args); end
+
+  def sdiff(*keys); end
+
+  def sdiffstore(destination, *keys); end
+
+  def select(db); end
+
+  def sentinel(subcommand, *args); end
+
+  def set(key, value, options=T.unsafe(nil)); end
+
+  def setbit(key, offset, value); end
+
+  def setex(key, ttl, value); end
+
+  def setnx(key, value); end
+
+  def setrange(key, offset, value); end
+
+  def shutdown(); end
+
+  def sinter(*keys); end
+
+  def sinterstore(destination, *keys); end
+
+  def sismember(key, member); end
+
+  def slaveof(host, port); end
+
+  def slowlog(subcommand, length=T.unsafe(nil)); end
+
+  def smembers(key); end
+
+  def smove(source, destination, member); end
+
+  def sort(key, options=T.unsafe(nil)); end
+
+  def spop(key, count=T.unsafe(nil)); end
+
+  def srandmember(key, count=T.unsafe(nil)); end
+
+  def srem(key, member); end
+
+  def sscan(key, cursor, options=T.unsafe(nil)); end
+
+  def sscan_each(key, options=T.unsafe(nil), &block); end
+
+  def strlen(key); end
+
+  def subscribe(*channels, &block); end
+
+  def subscribe_with_timeout(timeout, *channels, &block); end
+
+  def subscribed?(); end
+
+  def sunion(*keys); end
+
+  def sunionstore(destination, *keys); end
+
+  def sync(); end
+
+  def time(); end
+
+  def ttl(key); end
+
+  def type(key); end
+
+  def unlink(*keys); end
+
+  def unsubscribe(*channels); end
+
+  def unwatch(); end
+
+  def watch(*keys); end
+
+  def with_reconnect(val=T.unsafe(nil), &blk); end
+
+  def without_reconnect(&blk); end
+
+  def xack(key, group, *ids); end
+
+  def xadd(key, entry, opts=T.unsafe(nil)); end
+
+  def xclaim(key, group, consumer, min_idle_time, *ids, **opts); end
+
+  def xdel(key, *ids); end
+
+  def xgroup(subcommand, key, group, id_or_consumer=T.unsafe(nil), mkstream: T.unsafe(nil)); end
+
+  def xinfo(subcommand, key, group=T.unsafe(nil)); end
+
+  def xlen(key); end
+
+  def xpending(key, group, *args); end
+
+  def xrange(key, start=T.unsafe(nil), _end=T.unsafe(nil), count: T.unsafe(nil)); end
+
+  def xread(keys, ids, count: T.unsafe(nil), block: T.unsafe(nil)); end
+
+  def xreadgroup(group, consumer, keys, ids, opts=T.unsafe(nil)); end
+
+  def xrevrange(key, _end=T.unsafe(nil), start=T.unsafe(nil), count: T.unsafe(nil)); end
+
+  def xtrim(key, maxlen, approximate: T.unsafe(nil)); end
+
+  def zadd(key, *args); end
+
+  def zcard(key); end
+
+  def zcount(key, min, max); end
+
+  def zincrby(key, increment, member); end
+
+  def zinterstore(destination, keys, options=T.unsafe(nil)); end
+
+  def zlexcount(key, min, max); end
+
+  def zpopmax(key, count=T.unsafe(nil)); end
+
+  def zpopmin(key, count=T.unsafe(nil)); end
+
+  def zrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrangebylex(key, min, max, options=T.unsafe(nil)); end
+
+  def zrangebyscore(key, min, max, options=T.unsafe(nil)); end
+
+  def zrank(key, member); end
+
+  def zrem(key, member); end
+
+  def zremrangebyrank(key, start, stop); end
+
+  def zremrangebyscore(key, min, max); end
+
+  def zrevrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrevrangebylex(key, max, min, options=T.unsafe(nil)); end
+
+  def zrevrangebyscore(key, max, min, options=T.unsafe(nil)); end
+
+  def zrevrank(key, member); end
+
+  def zscan(key, cursor, options=T.unsafe(nil)); end
+
+  def zscan_each(key, options=T.unsafe(nil), &block); end
+
+  def zscore(key, member); end
+
+  def zunionstore(destination, keys, options=T.unsafe(nil)); end
+  Boolify = ::T.let(nil, ::T.untyped)
+  BoolifySet = ::T.let(nil, ::T.untyped)
+  Floatify = ::T.let(nil, ::T.untyped)
+  FloatifyPairs = ::T.let(nil, ::T.untyped)
+  Hashify = ::T.let(nil, ::T.untyped)
+  HashifyClusterNodeInfo = ::T.let(nil, ::T.untyped)
+  HashifyClusterNodes = ::T.let(nil, ::T.untyped)
+  HashifyClusterSlaves = ::T.let(nil, ::T.untyped)
+  HashifyClusterSlots = ::T.let(nil, ::T.untyped)
+  HashifyInfo = ::T.let(nil, ::T.untyped)
+  HashifyStreamEntries = ::T.let(nil, ::T.untyped)
+  HashifyStreamPendingDetails = ::T.let(nil, ::T.untyped)
+  HashifyStreamPendings = ::T.let(nil, ::T.untyped)
+  HashifyStreams = ::T.let(nil, ::T.untyped)
+  Noop = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::BaseConnectionError
+end
+
+class Redis::BaseConnectionError
+end
+
+class Redis::BaseError
+end
+
+class Redis::BaseError
+end
+
+class Redis::CannotConnectError
+end
+
+class Redis::CannotConnectError
+end
+
+class Redis::Client
+  def _parse_driver(driver); end
+
+  def _parse_options(options); end
+
+  def call(command); end
+
+  def call_loop(command, timeout=T.unsafe(nil)); end
+
+  def call_pipeline(pipeline); end
+
+  def call_pipelined(pipeline); end
+
+  def call_with_timeout(command, timeout, &blk); end
+
+  def call_without_timeout(command, &blk); end
+
+  def command_map(); end
+
+  def connect(); end
+
+  def connect_timeout(); end
+
+  def connected?(); end
+
+  def connection(); end
+
+  def db(); end
+
+  def db=(db); end
+
+  def disconnect(); end
+
+  def driver(); end
+
+  def ensure_connected(); end
+
+  def establish_connection(); end
+
+  def host(); end
+
+  def id(); end
+
+  def inherit_socket?(); end
+
+  def initialize(options=T.unsafe(nil)); end
+
+  def io(); end
+
+  def location(); end
+
+  def logger(); end
+
+  def logger=(logger); end
+
+  def logging(commands); end
+
+  def options(); end
+
+  def password(); end
+
+  def path(); end
+
+  def port(); end
+
+  def process(commands); end
+
+  def read(); end
+
+  def read_timeout(); end
+
+  def reconnect(); end
+
+  def scheme(); end
+
+  def timeout(); end
+
+  def with_reconnect(val=T.unsafe(nil)); end
+
+  def with_socket_timeout(timeout); end
+
+  def without_reconnect(&blk); end
+
+  def without_socket_timeout(&blk); end
+
+  def write(command); end
+  DEFAULTS = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Client::Connector
+  def check(client); end
+
+  def initialize(options); end
+
+  def resolve(); end
+end
+
+class Redis::Client::Connector::Sentinel
+  def resolve_master(); end
+
+  def resolve_slave(); end
+
+  def sentinel_detect(); end
+end
+
+class Redis::Client::Connector::Sentinel
+end
+
+class Redis::Client::Connector
+end
+
+class Redis::Client
+end
+
+class Redis::Cluster
+  def call(command, &block); end
+
+  def call_loop(command, timeout=T.unsafe(nil), &block); end
+
+  def call_pipeline(pipeline); end
+
+  def call_with_timeout(command, timeout, &block); end
+
+  def call_without_timeout(command, &block); end
+
+  def connected?(); end
+
+  def connection_info(); end
+
+  def db(); end
+
+  def db=(_db); end
+
+  def disconnect(); end
+
+  def id(); end
+
+  def initialize(options=T.unsafe(nil)); end
+
+  def process(commands, &block); end
+
+  def timeout(); end
+
+  def with_reconnect(val=T.unsafe(nil), &block); end
+end
+
+class Redis::Cluster::AmbiguousNodeError
+  def initialize(command); end
+end
+
+class Redis::Cluster::AmbiguousNodeError
+end
+
+class Redis::Cluster::Command
+  def extract_first_key(command); end
+
+  def initialize(details); end
+
+  def should_send_to_master?(command); end
+
+  def should_send_to_slave?(command); end
+end
+
+class Redis::Cluster::Command
+end
+
+class Redis::Cluster::CommandErrorCollection
+  def errors(); end
+
+  def initialize(errors, error_message=T.unsafe(nil)); end
+end
+
+class Redis::Cluster::CommandErrorCollection
+end
+
+module Redis::Cluster::CommandLoader
+end
+
+module Redis::Cluster::CommandLoader
+  def self.load(nodes); end
+end
+
+class Redis::Cluster::CrossSlotPipeliningError
+  def initialize(keys); end
+end
+
+class Redis::Cluster::CrossSlotPipeliningError
+end
+
+module Redis::Cluster::KeySlotConverter
+  HASH_SLOTS = ::T.let(nil, ::T.untyped)
+  XMODEM_CRC16_LOOKUP = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::KeySlotConverter
+  def self.convert(key); end
+end
+
+class Redis::Cluster::Node
+  include ::Enumerable
+  def call_all(command, &block); end
+
+  def call_master(command, &block); end
+
+  def call_slave(command, &block); end
+
+  def each(&block); end
+
+  def find_by(node_key); end
+
+  def initialize(options, node_flags=T.unsafe(nil), with_replica=T.unsafe(nil)); end
+
+  def process_all(commands, &block); end
+
+  def sample(); end
+  ROLE_SLAVE = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Cluster::Node::ReloadNeeded
+end
+
+class Redis::Cluster::Node::ReloadNeeded
+end
+
+class Redis::Cluster::Node
+end
+
+module Redis::Cluster::NodeKey
+  DEFAULT_SCHEME = ::T.let(nil, ::T.untyped)
+  DELIMITER = ::T.let(nil, ::T.untyped)
+  SECURE_SCHEME = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::NodeKey
+  def self.build_from_host_port(host, port); end
+
+  def self.build_from_uri(uri); end
+
+  def self.split(node_key); end
+
+  def self.to_node_urls(node_keys, secure:); end
+end
+
+module Redis::Cluster::NodeLoader
+end
+
+module Redis::Cluster::NodeLoader
+  def self.load_flags(nodes); end
+end
+
+class Redis::Cluster::Option
+  def add_node(host, port); end
+
+  def initialize(options); end
+
+  def per_node_key(); end
+
+  def secure?(); end
+
+  def update_node(addrs); end
+
+  def use_replica?(); end
+  DEFAULT_SCHEME = ::T.let(nil, ::T.untyped)
+  SECURE_SCHEME = ::T.let(nil, ::T.untyped)
+  VALID_SCHEMES = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Cluster::Option
+end
+
+class Redis::Cluster::OrchestrationCommandNotSupported
+  def initialize(command, subcommand=T.unsafe(nil)); end
+end
+
+class Redis::Cluster::OrchestrationCommandNotSupported
+end
+
+class Redis::Cluster::Slot
+  def exists?(slot); end
+
+  def find_node_key_of_master(slot); end
+
+  def find_node_key_of_slave(slot); end
+
+  def initialize(available_slots, node_flags=T.unsafe(nil), with_replica=T.unsafe(nil)); end
+
+  def put(slot, node_key); end
+  ROLE_SLAVE = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Cluster::Slot
+end
+
+module Redis::Cluster::SlotLoader
+end
+
+module Redis::Cluster::SlotLoader
+  def self.load(nodes); end
+end
+
+class Redis::Cluster
+end
+
+class Redis::CommandError
+end
+
+class Redis::CommandError
+end
+
+module Redis::Connection
+end
+
+module Redis::Connection::CommandHelper
+  def build_command(args); end
+
+  def encode(string); end
+  COMMAND_DELIMITER = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Connection::CommandHelper
+end
+
+class Redis::Connection::Ruby
+  include ::Redis::Connection::CommandHelper
+  def connected?(); end
+
+  def disconnect(); end
+
+  def format_bulk_reply(line); end
+
+  def format_error_reply(line); end
+
+  def format_integer_reply(line); end
+
+  def format_multi_bulk_reply(line); end
+
+  def format_reply(reply_type, line); end
+
+  def format_status_reply(line); end
+
+  def get_tcp_keepalive(); end
+
+  def initialize(sock); end
+
+  def read(); end
+
+  def set_tcp_keepalive(keepalive); end
+
+  def set_tcp_nodelay(); end
+
+  def timeout=(timeout); end
+
+  def write(command); end
+
+  def write_timeout=(timeout); end
+  ASTERISK = ::T.let(nil, ::T.untyped)
+  COLON = ::T.let(nil, ::T.untyped)
+  DOLLAR = ::T.let(nil, ::T.untyped)
+  MINUS = ::T.let(nil, ::T.untyped)
+  PLUS = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Connection::Ruby
+  def self.connect(config); end
+end
+
+class Redis::Connection::SSLSocket
+  include ::Redis::Connection::SocketMixin
+end
+
+class Redis::Connection::SSLSocket
+  def self.connect(host, port, timeout, ssl_params); end
+end
+
+module Redis::Connection::SocketMixin
+  def _read_from_socket(nbytes); end
+
+  def _write_to_socket(data); end
+
+  def gets(); end
+
+  def initialize(*args); end
+
+  def read(nbytes); end
+
+  def timeout=(timeout); end
+
+  def write(data); end
+
+  def write_timeout=(timeout); end
+  CRLF = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Connection::SocketMixin
+end
+
+class Redis::Connection::TCPSocket
+  include ::Redis::Connection::SocketMixin
+end
+
+class Redis::Connection::TCPSocket
+  def self.connect(host, port, timeout); end
+
+  def self.connect_addrinfo(ai, port, timeout); end
+end
+
+class Redis::Connection::UNIXSocket
+  include ::Redis::Connection::SocketMixin
+end
+
+class Redis::Connection::UNIXSocket
+  def self.connect(path, timeout); end
+end
+
+module Redis::Connection
+  def self.drivers(); end
+end
+
+class Redis::ConnectionError
+end
+
+class Redis::ConnectionError
+end
+
+class Redis::Distributed
+  include ::ActiveSupport::Cache::ConnectionPoolLike
+  def [](key); end
+
+  def []=(key, value); end
+
+  def _bpop(cmd, args); end
+
+  def _eval(cmd, args); end
+
+  def add_node(options); end
+
+  def append(key, value); end
+
+  def bgsave(); end
+
+  def bitcount(key, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def bitop(operation, destkey, *keys); end
+
+  def bitpos(key, bit, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def blpop(*args); end
+
+  def brpop(*args); end
+
+  def brpoplpush(source, destination, options=T.unsafe(nil)); end
+
+  def dbsize(); end
+
+  def decr(key); end
+
+  def decrby(key, decrement); end
+
+  def del(*args); end
+
+  def discard(); end
+
+  def dump(key); end
+
+  def echo(value); end
+
+  def ensure_same_node(command, keys); end
+
+  def eval(*args); end
+
+  def evalsha(*args); end
+
+  def exec(); end
+
+  def exists(key); end
+
+  def expire(key, seconds); end
+
+  def expireat(key, unix_time); end
+
+  def flushall(); end
+
+  def flushdb(); end
+
+  def get(key); end
+
+  def getbit(key, offset); end
+
+  def getrange(key, start, stop); end
+
+  def getset(key, value); end
+
+  def hdel(key, *fields); end
+
+  def hexists(key, field); end
+
+  def hget(key, field); end
+
+  def hgetall(key); end
+
+  def hincrby(key, field, increment); end
+
+  def hincrbyfloat(key, field, increment); end
+
+  def hkeys(key); end
+
+  def hlen(key); end
+
+  def hmget(key, *fields); end
+
+  def hmset(key, *attrs); end
+
+  def hset(key, field, value); end
+
+  def hsetnx(key, field, value); end
+
+  def hvals(key); end
+
+  def incr(key); end
+
+  def incrby(key, increment); end
+
+  def incrbyfloat(key, increment); end
+
+  def info(cmd=T.unsafe(nil)); end
+
+  def initialize(node_configs, options=T.unsafe(nil)); end
+
+  def key_tag(key); end
+
+  def keys(glob=T.unsafe(nil)); end
+
+  def lastsave(); end
+
+  def lindex(key, index); end
+
+  def linsert(key, where, pivot, value); end
+
+  def llen(key); end
+
+  def lpop(key); end
+
+  def lpush(key, value); end
+
+  def lpushx(key, value); end
+
+  def lrange(key, start, stop); end
+
+  def lrem(key, count, value); end
+
+  def lset(key, index, value); end
+
+  def ltrim(key, start, stop); end
+
+  def mapped_hmget(key, *fields); end
+
+  def mapped_hmset(key, hash); end
+
+  def mapped_mget(*keys); end
+
+  def mapped_mset(hash); end
+
+  def mapped_msetnx(hash); end
+
+  def mget(*keys); end
+
+  def migrate(key, options); end
+
+  def monitor(); end
+
+  def move(key, db); end
+
+  def mset(*args); end
+
+  def msetnx(*args); end
+
+  def multi(); end
+
+  def node_for(key); end
+
+  def node_index_for(key); end
+
+  def nodes(); end
+
+  def on_each_node(command, *args); end
+
+  def persist(key); end
+
+  def pexpire(key, milliseconds); end
+
+  def pexpireat(key, ms_unix_time); end
+
+  def pfadd(key, member); end
+
+  def pfcount(*keys); end
+
+  def pfmerge(dest_key, *source_key); end
+
+  def ping(); end
+
+  def pipelined(); end
+
+  def psetex(key, ttl, value); end
+
+  def psubscribe(*channels, &block); end
+
+  def pttl(key); end
+
+  def publish(channel, message); end
+
+  def punsubscribe(*channels); end
+
+  def quit(); end
+
+  def randomkey(); end
+
+  def rename(old_name, new_name); end
+
+  def renamenx(old_name, new_name); end
+
+  def restore(key, ttl, serialized_value, options=T.unsafe(nil)); end
+
+  def ring(); end
+
+  def rpop(key); end
+
+  def rpoplpush(source, destination); end
+
+  def rpush(key, value); end
+
+  def rpushx(key, value); end
+
+  def sadd(key, member); end
+
+  def save(); end
+
+  def scard(key); end
+
+  def script(subcommand, *args); end
+
+  def sdiff(*keys); end
+
+  def sdiffstore(destination, *keys); end
+
+  def select(db); end
+
+  def set(key, value, options=T.unsafe(nil)); end
+
+  def setbit(key, offset, value); end
+
+  def setex(key, ttl, value); end
+
+  def setnx(key, value); end
+
+  def setrange(key, offset, value); end
+
+  def sinter(*keys); end
+
+  def sinterstore(destination, *keys); end
+
+  def sismember(key, member); end
+
+  def smembers(key); end
+
+  def smove(source, destination, member); end
+
+  def sort(key, options=T.unsafe(nil)); end
+
+  def spop(key, count=T.unsafe(nil)); end
+
+  def srandmember(key, count=T.unsafe(nil)); end
+
+  def srem(key, member); end
+
+  def sscan(key, cursor, options=T.unsafe(nil)); end
+
+  def sscan_each(key, options=T.unsafe(nil), &block); end
+
+  def strlen(key); end
+
+  def subscribe(channel, *channels, &block); end
+
+  def subscribed?(); end
+
+  def sunion(*keys); end
+
+  def sunionstore(destination, *keys); end
+
+  def time(); end
+
+  def ttl(key); end
+
+  def type(key); end
+
+  def unlink(*args); end
+
+  def unsubscribe(*channels); end
+
+  def unwatch(); end
+
+  def watch(*keys); end
+
+  def zadd(key, *args); end
+
+  def zcard(key); end
+
+  def zcount(key, min, max); end
+
+  def zincrby(key, increment, member); end
+
+  def zinterstore(destination, keys, options=T.unsafe(nil)); end
+
+  def zrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrangebyscore(key, min, max, options=T.unsafe(nil)); end
+
+  def zrank(key, member); end
+
+  def zrem(key, member); end
+
+  def zremrangebyrank(key, start, stop); end
+
+  def zremrangebyscore(key, min, max); end
+
+  def zrevrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrevrangebyscore(key, max, min, options=T.unsafe(nil)); end
+
+  def zrevrank(key, member); end
+
+  def zscore(key, member); end
+
+  def zunionstore(destination, keys, options=T.unsafe(nil)); end
+end
+
+class Redis::Distributed::CannotDistribute
+  def initialize(command); end
+end
+
+class Redis::Distributed::CannotDistribute
+end
+
+class Redis::Distributed
+end
+
+class Redis::Future
+  def _command(); end
+
+  def _set(object); end
+
+  def class(); end
+
+  def initialize(command, transformation, timeout); end
+
+  def inspect(); end
+
+  def is_a?(other); end
+
+  def timeout(); end
+
+  def value(); end
+  FutureNotReady = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Future
+end
+
+class Redis::FutureNotReady
+  def initialize(); end
+end
+
+class Redis::FutureNotReady
+end
+
+class Redis::HashRing
+  def add_node(node); end
+
+  def get_node(key); end
+
+  def get_node_pos(key); end
+
+  def initialize(nodes=T.unsafe(nil), replicas=T.unsafe(nil)); end
+
+  def iter_nodes(key); end
+
+  def nodes(); end
+
+  def remove_node(node); end
+
+  def replicas(); end
+
+  def ring(); end
+
+  def sorted_keys(); end
+  POINTS_PER_SERVER = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::HashRing
+  def self.binary_search(ary, value, &block); end
+end
+
+class Redis::InheritedError
+end
+
+class Redis::InheritedError
+end
+
+class Redis::InvalidClientOptionError
+end
+
+class Redis::InvalidClientOptionError
+end
+
+class Redis::Pipeline
+  def call(command, timeout: T.unsafe(nil), &block); end
+
+  def call_pipeline(pipeline); end
+
+  def call_with_timeout(command, timeout, &block); end
+
+  def client(); end
+
+  def commands(); end
+
+  def db(); end
+
+  def db=(db); end
+
+  def empty?(); end
+
+  def finish(replies, &blk); end
+
+  def futures(); end
+
+  def initialize(client); end
+
+  def shutdown?(); end
+
+  def timeout(); end
+
+  def timeouts(); end
+
+  def with_reconnect(val=T.unsafe(nil)); end
+
+  def with_reconnect?(); end
+
+  def without_reconnect(&blk); end
+
+  def without_reconnect?(); end
+end
+
+class Redis::Pipeline::Multi
+  def finish(replies); end
+end
+
+class Redis::Pipeline::Multi
+end
+
+class Redis::Pipeline
+end
+
+class Redis::ProtocolError
+  def initialize(reply_type); end
+end
+
+class Redis::ProtocolError
+end
+
+class Redis::SubscribedClient
+  def call(command); end
+
+  def initialize(client); end
+
+  def psubscribe(*channels, &block); end
+
+  def psubscribe_with_timeout(timeout, *channels, &block); end
+
+  def punsubscribe(*channels); end
+
+  def subscribe(*channels, &block); end
+
+  def subscribe_with_timeout(timeout, *channels, &block); end
+
+  def subscription(start, stop, channels, block, timeout=T.unsafe(nil)); end
+
+  def unsubscribe(*channels); end
+end
+
+class Redis::SubscribedClient
+end
+
+class Redis::Subscription
+  def callbacks(); end
+
+  def message(&block); end
+
+  def pmessage(&block); end
+
+  def psubscribe(&block); end
+
+  def punsubscribe(&block); end
+
+  def subscribe(&block); end
+
+  def unsubscribe(&block); end
+end
+
+class Redis::Subscription
+end
+
+class Redis::TimeoutError
+end
+
+class Redis::TimeoutError
+end
+
+class Redis
+  def self.current(); end
+
+  def self.current=(redis); end
 end
 
 class Regexp
