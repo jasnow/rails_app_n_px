@@ -90,6 +90,7 @@ GEM
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
+    dalli (2.7.10)
     erubi (1.9.0)
     ffi (1.11.1)
     globalid (0.4.2)
@@ -128,6 +129,10 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    sorbet (0.4.4933)
+      sorbet-static (= 0.4.4933)
+    sorbet-runtime (0.4.4933)
+    sorbet-static (0.4.4933-universal-darwin-14)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -151,9 +156,12 @@ PLATFORMS
 DEPENDENCIES
   brakeman
   byebug
+  dalli
   listen
   puma
   rails!
+  sorbet
+  sorbet-runtime
   sqlite3
   tzinfo-data
 
