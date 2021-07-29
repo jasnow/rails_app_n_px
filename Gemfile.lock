@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails
-  revision: c166b3b64a375df22cc26714b4a9ad0507fb0673
+  revision: b31c2fd0172ca770a4851ea42c91367e7a22cc52
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -115,7 +115,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
-    puma (5.3.2)
+    puma (5.4.0)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
