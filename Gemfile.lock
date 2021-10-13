@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails
-  revision: 826f947ce7078a66e93276c8102dd235bb629911
+  revision: f2be2b013cc468eb4e10bb33ac001e48d4952f99
   branch: main
   specs:
     actioncable (7.0.0.alpha2)
@@ -79,7 +79,7 @@ GIT
       actionpack (= 7.0.0.alpha2)
       activesupport (= 7.0.0.alpha2)
       method_source
-      rake (>= 0.13)
+      rake (>= 12.2)
       thor (~> 1.0)
       zeitwerk (~> 2.5.0.beta5)
 
@@ -114,7 +114,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
-    puma (5.5.0)
+    puma (5.5.2)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
