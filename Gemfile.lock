@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails
-  revision: 4b6ac01fbb2ed0d0444654bba062d1e2ae88ffe7
+  revision: 5fa7049856cab9fbd188cad90d57947252ef9ea8
   branch: main
   specs:
     actioncable (7.0.0.alpha2)
@@ -34,6 +34,7 @@ GIT
       activerecord (= 7.0.0.alpha2)
       activestorage (= 7.0.0.alpha2)
       activesupport (= 7.0.0.alpha2)
+      globalid (>= 0.6.0)
       nokogiri (>= 1.8.5)
     actionview (7.0.0.alpha2)
       activesupport (= 7.0.0.alpha2)
@@ -93,7 +94,7 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.4)
-    globalid (0.5.2)
+    globalid (0.6.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
