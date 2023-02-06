@@ -31,7 +31,8 @@ gem "puma"
 group :development, :test do
   gem "debug", platforms: [:mri, :mingw, :x64_mingw]
   gem "brakeman"
-  gem "standard", group: [:development, :test]
+  gem "standard"
+  gem "ruby_audit"
 end
 
 group :development do
