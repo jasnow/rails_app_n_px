@@ -52,3 +52,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem 'dalli'
 # gem 'redis'
 # gem 'minitest'
+
+gem 'simplecov', require: false, group: :test
