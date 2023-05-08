@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails
-  revision: 431f9f47f51a8c22a9f8fb568ed4ca16243adcfc
+  revision: 80709bfe7a4c4f49aa4dc9d36dd6df4de8660100
   branch: main
   specs:
     actioncable (7.1.0.alpha)
@@ -148,6 +148,8 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.14.3-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
     parallel (1.23.0)
@@ -222,6 +224,7 @@ GEM
       tty-spinner
       tty-table
       zeitwerk (>= 2.6)
+    sqlite3 (1.6.2-x86_64-darwin)
     sqlite3 (1.6.2-x86_64-linux)
     standard (1.28.2)
       language_server-protocol (~> 3.17.0.2)
@@ -264,6 +267,7 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
+  x86_64-darwin-16
   x86_64-linux
 
 DEPENDENCIES
