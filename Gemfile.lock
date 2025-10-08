@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails
-  revision: 5d258574168692c7921637c47dd92498e8879855
+  revision: 82d39b5f52a6f6fd08bdbd92585cec03dfedaa14
   branch: main
   specs:
     actioncable (8.1.0.beta1)
@@ -108,7 +108,7 @@ GEM
     ast (2.4.3)
     base64 (0.3.0)
     benchmark (0.4.1)
-    bigdecimal (3.2.3)
+    bigdecimal (3.3.0)
     brakeman (7.1.0)
       racc
     builder (3.3.0)
@@ -163,7 +163,7 @@ GEM
     marcel (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (5.25.5)
+    minitest (5.26.0)
     mutex_m (0.3.0)
     net-imap (0.5.12)
       date
@@ -366,7 +366,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.4.6p54
+   ruby 3.4.7p58
 
 BUNDLED WITH
    2.7.2
