@@ -35,6 +35,7 @@ gem 'puma'
 group :development, :test do
   gem 'brakeman'
   gem 'spektr'
+  gem 'tty-table', '0.12.0'
   gem 'standard'
 end
 
